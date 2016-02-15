@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/for_result"
+        android:layout_above="@+id/tEur"
+        />
+    <TextView
+        android:id="@+id/tEur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/for_result"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        />
+    <TextView
+        android:id="@+id/tDol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/for_result"
+        android:layout_below="@+id/tEur"
+        />
+    <ProgressBar
+        android:id="@+id/pbProcessing"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
